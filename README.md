@@ -31,6 +31,7 @@
 - belongs_to  :user
   
 ## comments
+
 | Column             | Type      | Options                      |
 | ------------------ | ----------| ---------------------------- |
 | content            | text      | null: false,                 |
@@ -41,3 +42,21 @@
 
 - belongs_to  :user
 - belongs_to  :sauna
+
+## Dictionary
+| Column             | Type      | Options                      |
+| ------------------ | ----------| ---------------------------- |
+| article            | text      | null: false,                 |
+| user               | references| null: false,foreign_key: true|
+
+
+### Association
+
+- belongs_to  :user
+- belongs_to  :sauna
+
+## Review
+| Column             | Type      | Options                      |
+| ------------------ | ----------| ---------------------------- |
+| dictionary_review  | text      | null: false,                 |
+| user               | references| null: false,foreign_key: true|
