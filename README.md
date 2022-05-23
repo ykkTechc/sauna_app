@@ -1,24 +1,62 @@
 # README
+## users テーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column             | Type   | Options                  |
+| ------------------ | ------ | ------------------------ |
+| email              | string | null: false, unique: true|
+| encrypted_password | string | null: false              |
+| nickname           | string | null: false              |
+| lastname           | string | null: false              |
+| sub_lastname       | string | null: false              |
+| name               | string | null: false              |
+| sub_name           | string | null: false              |
+| birthday           | date   | null: false              |
 
-Things you may want to cover:
+### Association
 
-* Ruby version
+- has_many   :comments
+- has_many   :saunas
+  
+## saunas
+| Column             | Type      | Options                      |
+| ------------------ | ----------| ---------------------------- |
+| hot                | string    | null: false, unique: true    |
+| cool               | string    | null: false,                 |
+| chill              | string    | null: false,                 |
+| users              | references| null: false,foreign_key: true|
 
-* System dependencies
+### Association
 
-* Configuration
+- has_many    :comments
+- belongs_to  :user
+  
+## comments
 
-* Database creation
+| Column             | Type      | Options                      |
+| ------------------ | ----------| ---------------------------- |
+| content            | text      | null: false,                 |
+| user               | references| null: false,foreign_key: true|
+| sauna              | references| null: false,foreign_key: true|
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- belongs_to  :user
+- belongs_to  :sauna
 
-* Services (job queues, cache servers, search engines, etc.)
+## Dictionary
+| Column             | Type      | Options                      |
+| ------------------ | ----------| ---------------------------- |
+| article            | text      | null: false,                 |
+| user               | references| null: false,foreign_key: true|
 
-* Deployment instructions
 
-* ...
+### Association
+
+- belongs_to  :user
+- belongs_to  :sauna
+
+## Review
+| Column             | Type      | Options                      |
+| ------------------ | ----------| ---------------------------- |
+| dictionary_review  | text      | null: false,                 |
+| user               | references| null: false,foreign_key: true|
