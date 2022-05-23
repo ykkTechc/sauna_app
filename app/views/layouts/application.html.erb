@@ -8,9 +8,21 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <header class="header">
+      <h1 class="title"><a href="/"> Sauna.Life </a><h1>
+      <div class="header-icon">
+         <%= image_tag "ofuro_sauna_tonttu_stone.png"%> 
+      </div>
+    </header>
+   
+
 
     <%= yield %>
+    <footer>
+      <p>
+        Copyright Sauna.life 2022.
+      </p>
+    </footer>
   </body>
 </html>
