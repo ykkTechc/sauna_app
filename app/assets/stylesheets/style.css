@@ -1,14 +1,5 @@
-footer {
-  margin: 30px auto;
-  padding: 10px;
-  color: #D8D8D8;
-}
-footer p {
-  text-align: center;
-}
 .header {
   height: 80px;
-  width:   100%;
   background-color: #FFF8DC;
   display: flex;
   justify-content: space-between;
@@ -16,11 +7,13 @@ footer p {
 }
 .header-left {
   margin-left:20px ;
+
   color:darkturquoise;
   font-size: 80px;
   font-family: 'Permanent Marker', cursive;
 }
 .header-list{
+  width: 50%;
   display: flex;
 }
 .header-list img{
@@ -69,3 +62,11 @@ footer p {
   text-decoration: none;
 }
 
+footer {
+  margin: 30px auto;
+  padding: 10px;
+  color: #D8D8D8;
+}
+footer p {
+  text-align: center;
+}
