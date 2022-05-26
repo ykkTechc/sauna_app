@@ -4,9 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :nickname,     present: true
-  validates :lastname,     present: true
-  validates :sub_lastname, present: true
-  validates :name,         present: true
-  validates :sub_name,     present: true
+  validates :nickname,     presence: true
+  validates :lastname,     presence: true
+  validates :sub_lastname, presence: true
+  validates :name,         presence: true
+  validates :sub_name,     presence: true
 end
