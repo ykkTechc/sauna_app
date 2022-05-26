@@ -6,4 +6,7 @@ class SaunasController < ApplicationController
   def new
     @sauna = Sauna.new
   end
+
+
+
 end

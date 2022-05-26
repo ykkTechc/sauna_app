@@ -1,10 +1,35 @@
-<div class="contents row">
-  <div class="container">
-    <h3>投稿する</h3>
+<div class="contents">
+  <div class ="container">
+  <div class="form-header-text">
+    <h1>sauna.life</h1>
+  </div>
     <%= form_with(model: @sauna, local: true) do |form| %>
-      <%= form.text_area :text, placeholder: "text", rows: "10" %>
-      <%= form.text_area :text, placeholder: "text", rows: "10" %>
-      <%= form.text_area :text, placeholder: "text", rows: "10" %>
+    <div class="sauna-content">
+      <div class="sauna-title">
+        サウナ
+      </div>
+        <div class="hot-form">
+          <%= form.text_area :hot,class:'sauna-form' ,placeholder: "  text", rows: "10" %>
+        </div>
+      <div class="sauna-title">
+        水風呂
+      </div>
+        <div class="ice-form">
+          <%= form.text_area :ice,class:'sauna-form', placeholder: "  text", rows: "10" %>
+        </div>
+      <div class="sauna-title">
+        外気浴
+      </div>
+        <div class="chill-form">
+          <%= form.text_area :chill,class:'sauna-form', placeholder: "  text", rows: "10" %>
+        </div>
+      <div class="sauna-btn">
+        <%= form.submit "投稿する" ,class:"sauna-btn" %>
+        <%= link_to 'もどる', root_path, class:"back-btn" %>
+      </div>
+    </div>
     <% end %>
   </div>
 </div>
+
+    
