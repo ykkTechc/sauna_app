@@ -1,4 +1,5 @@
 class SaunasController < ApplicationController
+  before_action :authenticate_user!, except:[:index]
   def index
     @saunas = Sauna.all
   end

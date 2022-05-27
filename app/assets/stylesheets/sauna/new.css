@@ -17,6 +17,8 @@
   width: 500px;
   border-radius:30px;
   resize: none;
+  font-size: 20px;
+  padding: 0 20px;
 }
 .sauna-post{
   font-size: 50px;
