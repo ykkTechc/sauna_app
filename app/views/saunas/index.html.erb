@@ -26,5 +26,7 @@
        <%= image_tag "iStock-1163221036.jpg"%>
      </div>
    </div>
-   <%= render partial: 'prototype', collection: @prototypes %>
+   <% @saunas.each do |sauna| %>
+    <%= render partial: "sauna", locals: { sauna: sauna } %> 
+  <% end %>
   </div>
