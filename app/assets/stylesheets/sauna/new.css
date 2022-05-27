@@ -1,0 +1,26 @@
+.container{
+  text-align: center;
+}
+
+.form-header-text h1{
+  font-size: 50px;
+  font-family: 'Permanent Marker', cursive;
+}
+.sauna-content{
+  background-color: #FFF8DC;
+}
+.sauna-title{
+  font-size: 35px;
+  padding-top: 15px;
+}
+.sauna-form{
+  width: 500px;
+  border-radius:30px;
+  resize: none;
+}
+.sauna-post{
+  font-size: 50px;
+}
+.sauna-btn{
+  margin: 20px;
+}
