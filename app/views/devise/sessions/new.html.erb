@@ -1,5 +1,8 @@
-<%= form_with model: @user, url: user_session_path,class: 'registration-main', local: true do |f| %>
-<div class='form-wrap'>
+<%= form_with model: @user, url: user_session_path,class: 'session-main', local: true do |f| %>
+<div class="back-image">
+<div class="content-image">
+  <%= image_tag "shutterstock_1293374656.jpg"%>
+<div class='new-wrap'>
   <div class='form-header'>
     <h1 class='form-header-text'>
       sauna.life
@@ -27,5 +30,7 @@
   <div class='login-btn'>
     <%= f.submit "ログイン" ,class:"login-red-btn" %>
   </div>
+</div>
+</div>
 </div>
 <% end %>
