@@ -78,3 +78,7 @@ footer {
 footer p {
   text-align: center;
 }
+.active-name{
+  font-size: 100%;
+  line-height: 100px;
+}
