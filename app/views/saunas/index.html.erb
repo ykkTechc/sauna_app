@@ -1,25 +1,4 @@
  <div class="sauna">
-   <header class="header">
-      <div class="header-left">
-        <h1 class="title"><%=link_to "sauna.life", root_path %></h1>
-      </div>
-        <ul class="center-lists">
-          <li><%= link_to "サ活投稿" ,new_sauna_path ,class:"post" %></li>
-          <li><%= link_to "サウナ辞書", class:"post"%></li>
-        </ul>
-   
-        <ul class="right-lists">
-          <% if user_signed_in? %>
-            <li><%= link_to "マイページ" ,user_path(current_user) ,class:"post"%></li>
-            <li><%= link_to "ログアウト" ,destroy_user_session_path, method: :delete ,class:"post"%></li> 
-            <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
-          <% else %>
-            <li><%= link_to "ログイン", new_user_session_path, class:"post" %></li>
-            <li><%= link_to "新規登録", new_user_registration_path, class:"post" %></li>
-          <% end %>
-        </ul>
-      </div>
-   </header>
    <div class="content">
      <div class="content-image">
        <%= image_tag "iStock-1163221036.jpg"%>
