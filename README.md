@@ -20,7 +20,8 @@
 ## saunas
 | Column             | Type      | Options                      |
 | ------------------ | ----------| ---------------------------- |
-| hot                | string    | null: false, unique: true    |
+| shop               | string    | null: false,                 |
+| hot                | string    | null: false,                 |
 | cool               | string    | null: false,                 |
 | chill              | string    | null: false,                 |
 | users              | references| null: false,foreign_key: true|
