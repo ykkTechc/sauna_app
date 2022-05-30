@@ -17,6 +17,10 @@
   padding: 0 100px;
   border: 1px solid black;
 }
+.sauna-nickname{
+  color: black;
+  text-decoration: none;
+}
 .sauna-shop p{
   background-color: white;
   text-align: center;
