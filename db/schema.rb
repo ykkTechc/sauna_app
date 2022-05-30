@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2022_05_25_175354) do
 
   create_table "saunas", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "shop"
     t.text "hot"
     t.text "ice"
     t.text "chill"

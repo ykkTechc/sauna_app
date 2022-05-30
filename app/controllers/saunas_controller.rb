@@ -23,7 +23,7 @@ end
   private
 
   def sauna_params
-    params.require(:sauna).permit(:hot, :ice, :chill).merge(user_id: current_user.id)
+    params.require(:sauna).permit(:shop, :hot, :ice, :chill,).merge(user_id: current_user.id)
   end
 
   def set_sauna
