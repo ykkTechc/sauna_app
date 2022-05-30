@@ -4,14 +4,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom:1px solid black;
 }
 .header-left {
   width: 40%;
   margin-left: 30px;
 }
 .title{
+  width: 100%;
   font-size: 60px;
-  color:black;
   font-family:'Times New Roman', Times, serif ;
 }
 .title a{
@@ -68,8 +69,13 @@
   height: 750px;
   object-fit: cover;
 }
-
-
+.new-header-text{
+  font-size: 50px;
+  background-color: #FFF8DC;
+  font-family:'Times New Roman', Times, serif ;
+  line-height: 100px;
+  font-weight: bold;
+}
 footer {
   margin: 10px auto;
   padding: 10px;
@@ -77,4 +83,8 @@ footer {
 }
 footer p {
   text-align: center;
+}
+.active-name{
+  font-size: 100%;
+  line-height: 100px;
 }

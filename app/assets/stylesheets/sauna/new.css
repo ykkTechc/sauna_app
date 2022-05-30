@@ -8,13 +8,15 @@
 .form-title a{
   color: black;
   text-decoration: none;
+  
 }
 .sauna-content{
   background-color: #FFF8DC;
 }
 .sauna-article{
-  background-color: #ffe8a9;
+  background-color: #ffebbd;
   padding: 0 100px;
+  border: 1px solid black;
 }
 .sauna-title{
   font-size: 35px;
