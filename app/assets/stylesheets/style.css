@@ -12,6 +12,8 @@
 }
 .title{
   width: 100%;
+}
+.title a{
   font-size: 60px;
   font-family:'Times New Roman', Times, serif ;
 }
@@ -47,7 +49,7 @@
   font-family:'Times New Roman', Times, serif ;
   text-decoration: none;
   color: black;
-  padding: 25px;
+  padding: 23px;
 }
 .header-right{
   width: 50%;
