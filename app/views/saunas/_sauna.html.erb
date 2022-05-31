@@ -2,7 +2,7 @@
 <div class="only-sauna">
   <div class="sauna-article">
     <div class="article-name">
-      <%= link_to sauna.user.nickname ,user_path(current_user), class:"sauna-nickname"%>
+      <%= link_to sauna.user.nickname ,user_path(sauna.user.id)%>
     <div class="sauna-text">店名</div>
       <div class="sauna-shop">
         <p><%= sauna.shop%></p>
