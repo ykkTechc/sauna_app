@@ -71,8 +71,8 @@
 https://sauna-37907.herokuapp.com/
 
 #　テスト用アカウント
-
 メールアドレス：sauna@sauna
+
 パスワード：111111qq
 # BASIC認証
 ID：sauna
