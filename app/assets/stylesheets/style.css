@@ -95,3 +95,20 @@ footer p {
   font-size: 100%;
   line-height: 100px;
 }
+.my-name{
+  font-size: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+.my-sauna{
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+
+}
+.my-sauna-shop{
+  padding: 5px;
+}

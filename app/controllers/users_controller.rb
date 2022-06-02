@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(params[:id])
+    @sauna = Sauna.find(params[:id])
+    @saunas = Sauna.all
   end
 end

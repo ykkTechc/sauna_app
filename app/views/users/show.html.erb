@@ -1,6 +1,13 @@
 
-<div class="active-sauna">
- 
-  <p>~coming soon~</p>
-  <p>実装中です</p>
+<div class="my-page">
+  <div class="my-name">
+    <%= "#{current_user.nickname}  サ活一覧"%>
+  </div>
+  <div class="my-sauna">
+    <% @saunas.each do |sauna| %>
+      <ul>
+        <li class="my-sauna-shop"><%=link_to sauna.shop %></li>
+      </ul>
+    <%end%>
+  </div>
 </div>
