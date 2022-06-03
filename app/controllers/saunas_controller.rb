@@ -17,14 +17,14 @@ class SaunasController < ApplicationController
     render :new
    end
   end
- 
-def destroy
-  @sauna.destroy
-  redirect_to root_path
-end
 
-def show
-end
+  def show
+  end
+ 
+  def destroy
+    @sauna.destroy
+    redirect_to root_path
+  end
 
   private
 
