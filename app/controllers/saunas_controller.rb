@@ -19,6 +19,8 @@ class SaunasController < ApplicationController
   end
  
 def destroy
+  @sauna.destroy
+  redirect_to root_path
 end
 
 def show
@@ -27,7 +29,7 @@ end
   private
 
   def sauna_params
-    params.require(:sauna).permit(:shop, :hot, :ice, :chill,).merge(user_id: current_user.id)
+    params.require(:sauna).permit(:shop, :hot, :ice, :chill).merge(user_id: current_user.id)
   end
 
   def set_sauna
