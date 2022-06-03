@@ -6,7 +6,7 @@
   <div class="my-sauna">
     <% @saunas.each do |sauna| %>
       <ul>
-        <li class="my-sauna-shop"><%=link_to sauna.shop %></li>
+        <li class="my-sauna-shop"><%=link_to sauna.shop , sauna_path(sauna.id)%></li>
       </ul>
     <%end%>
   </div>

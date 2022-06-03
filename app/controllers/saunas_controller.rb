@@ -1,5 +1,5 @@
 class SaunasController < ApplicationController
-  before_action :set_sauna, only: [:destroy]
+  before_action :set_sauna, only: [:show,:destroy]
   before_action :authenticate_user!, except:[:index]
   def index
     @saunas = Sauna.all
@@ -20,6 +20,10 @@ class SaunasController < ApplicationController
  
 def destroy
 end
+
+def show
+end
+
   private
 
   def sauna_params

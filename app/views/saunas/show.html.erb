@@ -1,0 +1,34 @@
+  <div class="only-sauna">
+  <div class="sauna-article">
+   <div class="article-name">
+      <%= link_to @sauna.user.nickname ,user_path(@sauna.user.id)%>
+    <div class="sauna-text">店名</div>
+      <div class="sauna-shop">
+        <p><%= @sauna.shop%></p>
+      </div>
+    <div class="sauna-text">サウナ</div>
+      <div class="sauna-message">
+        <p><%= @sauna.hot%></p>
+      </div>
+    <div class="sauna-text">水風呂</div>
+      <div class="sauna-message">
+         <p><%= @sauna.ice%></p>
+      </div>
+    <div class="sauna-text">外気浴</div>
+      <div class="sauna-message">
+        <p><%= @sauna.chill%></p>
+      </div>
+  <div class="saunas-lists">
+    <ul class="sauna-list">
+      <li>
+        <%= link_to '編集'%>
+      </li>
+      <li>
+        <%=link_to '削除'%>
+      </li>
+    </ul>
+  </div>
+
+  </div>
+  </div>
+  </div>

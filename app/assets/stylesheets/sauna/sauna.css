@@ -32,4 +32,15 @@
 }
 .sauna-message{
   display: block;
+  margin-bottom: 30px;
+}
+
+.sauna-list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sauna-list a{
+ padding: 10px 50px;
+ border: 1px solid black;
 }
