@@ -1,10 +1,10 @@
 <%= form_with model:@sauna, local: true do |form| %>
     <div class="sauna-content">
-       <div class="sauna-text">
+       <div class="sauna-shop-name">
          店名
        </div>
       <div class="sauna-shop">
-        <%= form.text_area :shop,class:'shop-form' ,placeholder: "  text", rows: "10" %>
+        <%= form.text_field :shop,class:'shop-form' ,placeholder: "  text", rows: "10" %>
       </div>
       <div class="sauna-title">
         サウナ

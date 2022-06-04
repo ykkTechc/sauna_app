@@ -22,10 +22,14 @@
   text-decoration: none;
 }
 .sauna-shop p{
+  height: 30px;
   background-color: white;
   text-align: center;
   margin: 5px 5px;
   border-radius: 10px;
+}
+.shop-form{
+  font-size: 25px;
 }
 .sauna-title{
   font-size: 35px;
@@ -49,5 +53,6 @@
   font-size: 50px;
 }
 .sauna-btn{
+  font-size: 20px;
   margin: 20px;
 }
