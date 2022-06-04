@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @sauna = Sauna.all
     @saunas = Sauna.all
+    @saunas = current_user.saunas
   end
 end
