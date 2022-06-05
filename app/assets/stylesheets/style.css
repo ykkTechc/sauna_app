@@ -45,6 +45,9 @@
   justify-content: space-around;
   list-style: none;
 }
+.post:hover{
+  background-color: #ffebb8;
+}
 .right-lists a{
   font-family:'Times New Roman', Times, serif ;
   text-decoration: none;
@@ -67,6 +70,9 @@
 }
 .user-nickname{
   background-color: #F5DEB3;
+}
+.user-nickname:hover{
+  color:rgb(7, 7, 229);
 }
 .content-image img{
   width: 100%;
@@ -107,8 +113,12 @@ footer p {
   text-align: center;
   padding: 5px;
   border: 1px solid black;
-
 }
-.my-sauna-shop{
+.my-sauna-shop a{
   padding: 5px;
+  color: black;
+  text-decoration: none;
+}
+.my-sauna-shop a:hover{
+  color:rgb(7, 7, 229);
 }
