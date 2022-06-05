@@ -41,8 +41,6 @@
 .sauna-list{
   display: flex;
   justify-content: space-around;
-}
-.sauna-list li{
   text-decoration: none;
 }
 
