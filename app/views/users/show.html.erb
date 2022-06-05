@@ -1,13 +1,18 @@
 
 <div class="my-page">
   <div class="my-name">
-    <%= "#{current_user.nickname}  サ活一覧"%>
+    <%= "#{@user.nickname}  サ活一覧"%>
   </div>
+<% if user_signed_in?%>
   <div class="my-sauna">
     <% @saunas.each do |sauna| %>
       <ul>
         <li class="my-sauna-shop"><%=link_to sauna.shop , sauna_path(sauna.id)%></li>
       </ul>
     <%end%>
+<%else%>
+      <ul>
+        <li ><%=link_to @sauna.shop , sauna_path(sauna.id)%></li>
+      </ul>
   </div>
-</div>
+<%end%>

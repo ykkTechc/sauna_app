@@ -1,6 +1,7 @@
 class SaunasController < ApplicationController
   before_action :set_sauna, only: [:show,:edit,:update,:destroy]
   before_action :authenticate_user!, except:[:index]
+  before_action :move_to_index, only: [:edit,:update,:destroy]
   def index
     @saunas = Sauna.all
   end
@@ -42,6 +43,10 @@ class SaunasController < ApplicationController
 
   def set_sauna
     @sauna = Sauna.find(params[:id])
+  end
+
+  def move_to_index
+    redirect_to root_path unless current_user == @sauna.user 
   end
 
 end
