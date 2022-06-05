@@ -114,6 +114,9 @@ footer p {
   padding: 5px;
   border: 1px solid black;
 }
+.my-sauna li{
+  text-decoration: none;
+}
 .my-sauna-shop a{
   padding: 5px;
   color: black;
