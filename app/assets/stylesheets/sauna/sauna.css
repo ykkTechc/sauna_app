@@ -37,13 +37,17 @@
   display: block;
   margin-bottom: 30px;
 }
-
+.my-sauna-shop{
+  list-style: none;
+}
 .sauna-list{
   display: flex;
   justify-content: space-around;
   text-decoration: none;
 }
-
+.sauna-list li{
+  list-style: none;
+}
 .sauna-list a{
  padding: 10px 50px;
  border: 1px solid black;
