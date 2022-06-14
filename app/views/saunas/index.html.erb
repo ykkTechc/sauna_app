@@ -1,9 +1,5 @@
  <div class="sauna">
-   <div class="content">
-     <div class="content-image">
-       <%= image_tag "iStock-1163221036.jpg"%>
-     </div>
-   </div>
+
    <% @saunas.each do |sauna| %>
     <%= render partial: "sauna", locals: {sauna: sauna} %> 
    <% end %>
