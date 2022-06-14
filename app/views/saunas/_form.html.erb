@@ -1,30 +1,15 @@
 <%= form_with model:@sauna, local: true do |form| %>
     <div class="sauna-content">
-       <div class="sauna-shop-name">
-         店名
-       </div>
-      <div class="sauna-shop">
+      <div class="sauna-shop-name">店名</div>
         <%= form.text_field :shop,class:'shop-form' ,placeholder: "  text", rows: "10" %>
-      </div>
-      <div class="sauna-title">
-        サウナ
-      </div>
-        <div class="hot-form">
-          <%= form.text_area :hot,class:'sauna-form' ,placeholder: "  text", rows: "10" %>
-        </div>
-      <div class="sauna-title">
-        水風呂
-      </div>
-        <div class="ice-form">
-          <%= form.text_area :ice,class:'sauna-form', placeholder: "  text", rows: "10" %>
-        </div>
-      <div class="sauna-title">
-        外気浴
-      </div>
-        <div class="chill-form">
-          <%= form.text_area :chill,class:'sauna-form', placeholder: "  text", rows: "10" %>
-        </div>
-      </div>
+      <div class="sauna-title">サウナ</div>
+        <%= form.text_area :hot,class:'sauna-form' ,placeholder: "  text", rows: "10" %>
+      <div class="sauna-title">水風呂</div>
+        <%= form.text_area :ice,class:'sauna-form', placeholder: "  text", rows: "10" %>
+      <div class="sauna-title">外気浴</div>
+        <%= form.text_area :chill,class:'sauna-form', placeholder: "  text", rows: "10" %>
+    </div>
+
       <div class="sauna-btn">
         <%= form.submit "投稿する" ,class:"sauna-btn" %>
         <%= link_to 'もどる', root_path, class:"back-btn" %>
