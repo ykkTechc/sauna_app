@@ -1,15 +1,17 @@
  <div class="sauna">
- <div class="content">
-     <div class="content-image">
-       <%= image_tag "iStock-1163221036.jpg"%>
-     </div>
-   </div>
-<div class="your-class">
-  <div>your content</div>
-  <div>your content</div>
-  <div>your content</div>
+<div id="slide_show">
+  <ul id="slide">
+    <li class="slide-sauna"><%= image_tag "iStock-1163221036.jpg"%></li>
+    <li class="slide-sauna"><%= image_tag "sauna_house.jpg"%></li>
+    <li class="slide-sauna"><%= image_tag "water_pool.jpg"%></li>
+  </ul>
+  <div id="nav_btn">
+     <%= link_to image_tag"btn_prev.png",class:"prev" %>
+     <%= link_to image_tag"btn_next.png",class:"next" %>
+  </div>
 </div>
-		
+
+
    <% @saunas.each do |sauna| %>
     <%= render partial: "sauna", locals: {sauna: sauna} %> 
    <% end %>
