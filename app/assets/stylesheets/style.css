@@ -123,40 +123,23 @@ footer p {
 .my-sauna-shop a:hover{
   color:rgb(7, 7, 229);
 }
-.slide-sauna img{
+.slider img{
   width: 100%;
-  max-width: 1450px;
+  height: 750px;
+  object-fit: cover;
 }
-
-/* スライドショースタイル */
-#slide_show{
-  width: 100%;
-  max-width: 1450px;
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-  height:850px;
+.slider {
+  visibility: hidden;
 }
-
-#slide li{
-  float: left;
+.slider.slick-initialized{
+  visibility: visible;
 }
-
-#nav_btn .prev{
-  position: absolute;
-  left:10px;
-  top:50%;
-  margin-top:-25px;
+.slick-prev, .slick-next{
+  z-index: 1;
 }
-
-#nav_btn .next {
-  position: absolute;
-  right: 10px;
-  top:50%;
-  margin-top:-25px;
+.slick-prev {
+  left: 10px;
 }
-
-#slide {
-  width: 10000px;
-  list-style: none;
+.slick-next {
+   right: 10px;
 }
